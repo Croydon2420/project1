@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #FFFFFF;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #FED002;
+}
+.logo img{
+    height: 70px;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+.navlinks li{
+    list-style: none;
+}
+.navlinks a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#twitter{
+    color: #27AAE1;
+}
+#facebook{
+    color: #395795;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.parallax {
+    background-image: url("burger-hero.jpg");
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*text-align: center;*/
+    color: #FFFFFF;
+}
+.parallaxAbout {
+    background-image: url("burger-hero.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+}
+.parallaxH1{
+    padding-top: 225px;
+    font-size: 100px;
+    text-align: center;
+}
+.parallaxH3{
+    font-size: 49px;
+}
+
+.parallaxMenuH1{
+    padding-top: 150px;
+    font-size: 300px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.locTitle{
+    width: 100%;
+}
+.loc{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#googleMap{
+    width: 70%;
+    height: 500px;
+}
+.locations{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.row1{
+    width: 70%;
+    display: flex;
+    margin: 50px auto -50px auto;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FED002;
+    border-radius: 20px;
+}
+.row2{
+    width: 70%;
+    display: flex;
+    margin: 0 auto 50px auto;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FED002;
+    border-radius: 20px;
+}
+.saltLake, .sandy, .lehi, .provo{
+    width: 50%;
+    text-align: center;
+}
+.sandy, .provo{
+    padding-right: 150px;
+}
+.saltLake, .lehi{
+    padding-left: 150px;
+}
+
+.containerForm{
+    display: flex;
+    justify-content: center;
+}
+
+
+form {
+    background-color: #FED002;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+label {
+    width: 125px;
+}
+
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input, select, textarea {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input, select, textarea, label {
+    display: flex;
+    justify-content: center;
+}
+h2, .formTitle, h3{
+    text-align: center;
+}
+.row{
+    display: inline;
+}
+.fit{
+    margin-top: 40px;
+    text-align: left;
+}
+.work{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.availability{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.checkbox{
+    display: inline;
+    flex-direction: column;
+}
+.spch{
+    margin-bottom: 40px;
+    text-align: left;
+}
+#spch1{
+    text-align: left;
+}
+.aboutH1{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 90px;
+    margin-bottom: 100px;
+}
+
+
+.about1{
+    width: 100%;
+    display: flex;
+}
+.about2{
+    width: 100%;
+    display: flex;
+}
+.aboutRow{
+    width: 50%;
+    margin: 20px 0;
+}
+
+
+
+.circle1{
+    background-color: #FED002;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.circle1P{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
+
+.circle2{
+    background-color: #FED002;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.circle2P{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
+
+.circle3{
+    background-color: #FED002;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.circle3P{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
+
+.circle4{
+    background-color: #FED002;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.circle4P{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
+
+.circleC{
+    background-color: #FED002;
+    width: 70%;
+    height: 200px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.circleCP{
+    width: 80%;
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+}
+
+.burgers{
+    background-color: #FED002;
+    width: 70%;
+    height: 500px;
+    border-radius: 30px;
+    /*display: flex;*/
+    margin: 0 auto;
+}
+.burgersContainer{
+    display: flex;
+}
+.menuH1{
+    width: 50%;
+    margin: 0 auto 24px auto;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+.menuH3{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.burger1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+
+.burger2{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+.price{
+    font-size: 20px;
+    display: inline;
+}
+.toppingsFree{
+    text-align: center;
+    padding-top: 20px;
+}
+.toppingsP{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.topI{
+    font-size: 12px;
+    color: black;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.toppingsExtra{
+    text-align: center;
+    padding-top: 20px;
+}
+.toppingsPExtra{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.menuH1T{
+    width: 50%;
+    margin: -50px auto 24px auto;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.chicken{
+    background-color: #FED002;
+    width: 70%;
+    height: 250px;
+    border-radius: 30px;
+    /*display: flex;*/
+    margin: 30px auto;
+}
+
+.fry{
+    background-color: #FED002;
+    width: 70%;
+    height: 250px;
+    border-radius: 30px;
+    /*display: flex;*/
+    margin: 0 auto;
+}
+.fry1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+
+.fry2{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+
+.drinks{
+    background-color: #FED002;
+    width: 70%;
+    height: 170px;
+    border-radius: 30px;
+    /*display: flex;*/
+    margin: 30px auto;
+}
+.menuH1D{
+    width: 50%;
+    margin: 0 auto 24px auto;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.cone{
+    background-color: #FED002;
+    width: 70%;
+    height: 220px;
+    border-radius: 30px;
+    /*display: flex;*/
+    margin: 0 auto;
+}
+.cone1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+    padding-top: 25px;
+}
+
+.cone2{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+    padding-top: 25px;
+}
+.shake{
+    background-color: #FED002;
+    width: 70%;
+    height: 250px;
+    border-radius: 30px;
+    /*display: flex;*/
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+.shake1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+    padding-top: 25px;
+}
+
+.shake2{
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     padding-bottom: 20px;
+     font-size: 19px;
+     padding-top: 25px;
+ }
+.shake3{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+    padding-top: 25px;
+}
+
+.FAQ {
+    background-color: #FED002;
+    width: 70%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+h4{
+    margin: 20px 0 0 0;
+    font-size: 20px;
+}
+button{
+    margin: 10px auto;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rockey Burgers</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <div class="logo">
+            <img src="rockeyburgers02-logo.png">
+        </div>
+        <ul class="navlinks">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <a id="twitter" href="http://www.twitter.com/keyburgers"><i class="fab fa-twitter"></i></a>
+            <a id="facebook" href="http://www.facebook.com/keyburgers"><i class="fab fa-facebook-f"></i></a>
+        </ul>
+    </div>
+
+    <div class="parallax">
+        <h1 class="parallaxH1">ROCKEY BURGERS</h1>
+        <h3 class="parallaxH3">Best Quality Burgers in town. Off the charts.</h3>
+
+        <div class="locations">
+            <div class="locTitle">
+                <h1 class="loc">Utah Locations</h1>
+            </div>
+            <div class="map">
+                <div id="googleMap"></div>
+
+                <script>
+                    function myMap() {
+                        var mapProp= {
+                            center:new google.maps.LatLng(51.508742,-0.120850),
+                            zoom:5,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+                </script>
+            </div>
+            <div class="row1">
+                <div class="saltLake">
+                    <h1>Downtown Salt Lake City</h1>
+                    <p>
+                        346 Kearns Street,
+                        <br>
+                        Salt Lake City, UT 84111
+                        <br>
+                        Mon – Fri 11am to 8pm
+                        <br>
+                        Sat 10am to 8pm
+                        <br>
+                        Closed Sundays
+                        <br>
+                        801-677-0070
+                    </p>
+                </div>
+                <div class="sandy">
+                    <h1>Sandy</h1>
+                    <p>
+                        346 Murray Lane,
+                        <br>
+                        Sandy, UT 84093
+                        <br>
+                        Mon – Fri 11am to 8pm
+                        <br>
+                        Sat 10am to 8pm
+                        <br>
+                        Closed Sundays
+                        <br>
+                        801-777-0070
+                    </p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="lehi">
+                    <h1>Lehi</h1>
+                    <p>
+                        1205 Cabela Drive,
+                        <br>
+                        Lehi, UT 8403
+                        <br>
+                        Mon – Fri 11am to 8pm
+                        <br>
+                        Sat 10am to 8pm
+                        <br>
+                        Closed Sundays
+                        <br>
+                        801-777-0070
+                    </p>
+                </div>
+                <div class="provo">
+                    <h1>Provo</h1>
+                    <p>
+                        841 N University Ave,
+                        <br>
+                        Provo, UT 84604
+                        <br>
+                        Mon – Fri 11am to 8pm
+                        <br>
+                        Sat 10am to 8pm
+                        <br>
+                        Closed Sundays
+                        <br>
+                        801-777-0070
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerForm">
+            <div class="subscribeForm">
+                <form method="POST">
+                    <h1 class="formTitle">Subscribe Today</h1>
+                    <h3>Don't miss out on discounts!</h3>
+                    <div>
+                        <label for="fullName">Full Name: </label>
+                        <input type="text" id="fullName" name="fullName">
+                    </div>
+                    <div>
+                        <label for="subscribeEmail">Email: </label>
+                        <input type="text" id="subscribeEmail" name="subscribeEmail">
+                    </div>
+                    <div>
+                        <label for="phoneNum">Phone Number: </label>
+                        <input type="text" id="phoneNum" name="phoneNum">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="containerForm">
+            <div class="jobForm">
+                <form method="POST">
+                    <h1 class="formTitle">Need A Job?</h1>
+                    <h3>Join our great team!</h3>
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div>
+                        <label for="streetAddress">Street Address: </label>
+                        <input type="text" id="streetAddress" name="streetAddress">
+                    </div>
+                    <div>
+                        <label for="address2">Address Line 2: </label>
+                        <input type="text" id="address2" name="address2">
+                    </div>
+                    <div>
+                        <label for="city">City: </label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State: </label>
+                        <select id="state" name="state">
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Washington">Washington</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zipCode">Zip Code: </label>
+                        <input type="text" id="zipCode" name="zipCode">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number: </label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="jobEmail">Email: </label>
+                        <input type="email" id="jobEmail" name="jobEmail">
+                    </div>
+                    <h2 class="work">Work History</h2>
+                    <h4>Tell us about your last two jobs. What did you do? Who did you work for? How long were you there?</h4>
+                    <textarea id="history1" name="history1" cols="60" rows="10">Job 1</textarea>
+                    <textarea id="history2" name="history2" cols="60" rows="10">Job 2</textarea>
+                    <h2 class="availability">Availability</h2>
+                    <div class="checkbox">
+                        <div class="row">
+                            <input type="checkbox" name="daytime" value="daytime">
+                            <span style="text-align: left;">Daytime</span>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="evening" value="evening">
+                            <span style="text-align: left;">Evening</span>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="anytime" value="anytime">
+                            <span style="text-align: left;">Anytime</span>
+                        </div>
+                    </div>
+                    <h4 class="fit">What makes you a great fit?</h4>
+                    <div>
+                        <textarea id="fit" name="fit" cols="60" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="FAQ">
+            <h1 class="formTitle">Frequently Asked Questions</h1>
+            <h4>Why is your Rockey Burger So Expensive?</h4>
+
+            <button onclick="myFunction1()">See Answer</button>
+            <div id="myDIV1">
+                We focus on making meals with the best and freshest ingredients, like humanely-raised beef that is ground fresh each day, organic chicken, and Rockey Family Dairy’s organic cream for our ice cream cones, sundaes and shakes.
+                <br>
+                Our commitment to freshness and quality means higher prices than you’d find at traditional fast-food burger chains. It also means food that tastes way better — because, well, it is.
+            </div>
+
+            <h4>Where does your beef come from?</h4>
+
+            <button onclick="myFunction2()">See Answer</button>
+            <div id="myDIV2">
+                We source our humanely-raised, vegetarian-fed beef from local, family-owned ranches. We use an 85% to 15% protein to fat blend, a mixture of the lean protein and the marbling found on in a cut of steak for our ground beef. The mixture is ground daily, and thus, our burgers taste so amazing.
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+</html>
